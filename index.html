@@ -22,6 +22,7 @@
         
             <ul>
                 <li><a href="#teaser" class="nav-link"><i class="fas fa-video"></i> Teaser </a></li>
+                <li><a href="#intuition" class="nav-link"><i class="fas fa-video"></i> What is OSEG? </a></li>
                 <li><a href="#showcases" class="nav-link"><i class="fas fa-video"></i> T2V(Comparison) </a></li>
                 <li><a href="#compare" class="nav-link"><i class="fas fa-trophy"></i> T2I(Comparison)</a></li>
                 <li><a href="#ablations" class="nav-link"><i class="fas fa-comments"></i> Ablations </a></li>
@@ -79,11 +80,16 @@
                   <div class="prompt-overlay">An electric scooter parked against a brick wall.</div>
                   <div class="resolution">SDXL+OSEG</div>
                 </div>
-                
             </div>  
-        
-            </section>
-
+        </section>
+        <section id="intuition" class="gallery-section">
+            <h2> Diffusion sampling by OSEG </h2>
+            <div class="gallery-item" style="--aspect-ratio: 3 / 4; grid-column: span 16; grid-row: span 18;">
+              <img class="gallery-image" src="./assets/video_teaser/intuition.png"
+               alt="Electric scooter parked against a brick wall" loading="lazy" decoding="async">
+              <div class="caption">From the Energy-based perspective, attention operation is equivalent to gradient minimization in the energy landscape. For classifier-free guidance (CFG), the gradient trajectory suffers from the landscape's curvature. Smoothed energy guidance (SEG) improves the curvature minimization but suffers from detail suppression; however, orthogonal smoothed energy guidance (OSEG) directs the gradient path towards a better minimization trajectory and yields crisper sampling.</div>
+            </div>   
+        </section>
         <section id="showcases" class="gallery-section">
             <h2>T2V(Comparison)</h2>
             <h3>Hover on the video to see corresponding text prompts</h3>
@@ -815,6 +821,7 @@
 </body>
 
 </html>
+
 
 
 
