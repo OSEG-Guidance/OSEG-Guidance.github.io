@@ -217,22 +217,24 @@
             
         </section>
         
-        <section id="intuition" class="gallery-section">
-          <h2>Intuition</h2>
-          <h3 style="text-align:center;color:#1c170e;font-weight:bolder;">Diffusion Sampling with OSEG</h3>
+    <section id="intuition" class="gallery-section">
+      <h2>Intuition</h2>
+      <h3 style="text-align:center;color:#1c170e;font-weight:bolder;">Diffusion Sampling with OSEG</h3>
 
-          <h3 class="prompt">
-            <span class="prompt-highlight">
-              From the Energy-based perspective, attention operation is equivalent to gradient minimization in the energy landscape. For classifier-free guidance (CFG), the gradient trajectory suffers from the landscape’s curvature. Smoothed energy guidance (SEG) improves the curvature minimization but suffers from detail suppression; however, orthogonal smoothed energy guidance (OSEG) directs the gradient path towards a better minimization trajectory and yields crisper sampling.
-            </span>
-          </h3>
+      <h3 class="prompt">
+        <span class="prompt-highlight">
+          From the Energy-based perspective, attention operation is equivalent to gradient minimization in the energy landscape. For classifier-free guidance (CFG), the gradient trajectory suffers from the landscape’s curvature. Smoothed energy guidance (SEG) improves the curvature minimization but suffers from detail suppression; however, orthogonal smoothed energy guidance (OSEG) directs the gradient path towards a better minimization trajectory and yields crisper sampling.
+        </span>
+      </h3>
 
+      <div class="gallery-32">
         <div class="gallery-item" style="--aspect-ratio:16/14; grid-column:span 16; grid-row:span 16;">
-          <img class="gallery-image"
-               src="./assets/video_teaser/intuition.png"
-               alt="Energy landscape intuition" loading="lazy" decoding="async">
+          <img class="gallery-image contain"
+           src="./assets/video_teaser/intuition.png"
+           alt="Energy landscape intuition for OSEG" loading="lazy" decoding="async">
         </div>
-        </section>
+      </div>
+    </section>
 
         <section id="compare" class="gallery-section">
             <h2>T2I(Comparison)</h2>
@@ -830,6 +832,7 @@
 </body>
 
 </html>
+
 
 
 
