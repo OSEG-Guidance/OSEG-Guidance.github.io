@@ -362,14 +362,14 @@ pre {
     display: block;
     padding-bottom: calc(100% / (var(--aspect-ratio)));
 }
-.gallery-item { position: relative; overflow: hidden; }
-.gallery-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;          /* keep same size/crop */
-  object-position: center;    /* shift crop to center */
-  display: block;
-}
+
+/* my code */
+  .gallery-image.contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   /* show entire image, add side/top padding if needed */
+  }
+
 .gallery-video {
     position: absolute;
     top: 0;
@@ -657,6 +657,7 @@ pre {
     background-color: rgba(255, 255, 255, 0.8);
 
 }
+
 
 
 
